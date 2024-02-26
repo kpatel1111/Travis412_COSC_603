@@ -14,5 +14,10 @@ public class SimpleCalculator {
 	public int minus(int a,int b){
 		return a-b;
 	}
-	
+	/*
+	 * The following divide function is utilized to divide both the integers numbers and returns the results back the calling functions.
+	 */
+	public int divide(int a,int b){
+		return a/b;
+	}
 }
