@@ -33,4 +33,13 @@ public class SimpleCalculatorTest {
 		SimpleCalculator calculator = new SimpleCalculator();
 		assertEquals(2,calculator.divide(4,2));
 	}
+	/*
+	 * The below test method is utilized to test the multiply method in the simple calculator class because it will
+	 * receive two integer numbers and will verify if both the expected and the actual values are the same results.
+	 */
+	@Test
+	public void testMultiply(){
+		SimpleCalculator calculator = new SimpleCalculator();
+		assertEquals(4,calculator.multiply(2,2));
+	}
 }
