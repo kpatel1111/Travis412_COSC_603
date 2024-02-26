@@ -2,22 +2,17 @@ package travis_ci_tutorial_java;
 
 public class SimpleCalculator {
 	/*
-	 * The below test method is utilized to test the add method in the simple calculator class because it will
-	 * receive two integer numbers and verify if both the expected and the actual values are the same results.
+	 * The following add method is utilized to add both the integers numbers and returns the results back to the calling functions.
 	 */
-	@Test
-	public void testAdd(){
-		SimpleCalculator calc = new SimpleCalculator();
-		assertEquals(calc.add(1,1),2);
+	public int add(int a, int b){
+		return a + b;
 	}
 	
 	/*
-	 * The below test method is utilized to test the method in the simple calculator class because it will
-	 * receive two integer numbers and will verify if both the expected and the actual values are the same results.
+	 * The following minus method is utilized to subtract both the integers numbers and returns the result back to the calling functions.
 	 */
-	@Test
-	public void testMinus(){
-		SimpleCalculator calculator = new SimpleCalculator();
-		assertEquals(2,calculator.minus(5,3));
+	public int minus(int a,int b){
+		return a-b;
 	}
+	
 }
