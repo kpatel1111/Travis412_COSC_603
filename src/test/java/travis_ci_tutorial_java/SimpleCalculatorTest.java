@@ -42,4 +42,13 @@ public class SimpleCalculatorTest {
 		SimpleCalculator calculator = new SimpleCalculator();
 		assertEquals(4,calculator.multiply(2,2));
 	}
+	/*
+	 * The below test method is utilized to test the divide method in the simple calculator class because it will
+	 * receive two integer numbers, with one number being zero, and will verify if the method correctly is producing the divide by zero exception.
+	 */
+	@Test(expected=DivideByZeroException.class)
+	public void testDivideByZeroException()throws DivideByZeroException{
+		SimpleCalculator calculator = new SimpleCalculator();
+		calculator.divide(4,0);
+	}
 }
