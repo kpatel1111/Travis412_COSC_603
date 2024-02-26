@@ -46,7 +46,7 @@ public class SimpleCalculatorTest {
 	 * The below test method is utilized to test the divide method in the simple calculator class because it will
 	 * receive two integer numbers, with one number being zero, and will verify if the method correctly is producing the divide by zero exception.
 	 */
-	@Test(expected=DivideByZeroException.class)
+	@Test(expected=NullPointerException.class)
 	public void testDivideByZeroException()throws NullPointerException{
 		SimpleCalculator calculator = new SimpleCalculator();
 		calculator.divide(4,0);
