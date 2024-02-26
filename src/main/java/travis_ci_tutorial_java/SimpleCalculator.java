@@ -17,7 +17,10 @@ public class SimpleCalculator {
 	/*
 	 * The following divide function is utilized to divide both the integers numbers and returns the results back the calling functions.
 	 */
-	public int divide(int a,int b){
+	public int divide(int a,int b)throws DivideByZeroException{
+		if(b==0) {
+			throw new DivideByZeroException();
+		}
 		return a/b;
 	}
 	/*
