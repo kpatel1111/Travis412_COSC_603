@@ -20,4 +20,10 @@ public class SimpleCalculator {
 	public int divide(int a,int b){
 		return a/b;
 	}
+	/*
+	 * The following multiply function is utilized to multiply both the integers numbers an returns the results back to the calling functions.
+	 */
+	public int multiply(int a,int b){
+		return a*b;
+	}
 }
